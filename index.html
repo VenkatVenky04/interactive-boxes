@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes | Interactive BOGO Offer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+          <span class="line"></span>
+          <span class="highlight">YAY! It’s BOGO</span>
+          <span class="line"></span>
+        </h1>
+    
+        <form id="offerForm">
+          <!-- 1 Unit Option -->
+          <label class="card">
+            <input type="radio" name="unit" value="1" />
+            <div class="card-content">
+              <div class="left">
+                <div class="unit-title">1 Unit <span class="badge">10% Off</span></div>
+                <div class="desc">Standard Price</div>
+              </div>
+              <div class="right">
+                <div class="price">$10.00 USD</div>
+                <div class="original-price">$24.00 USD</div>
+              </div>
+            </div>
+          </label>
+    
+          <!-- 2 Unit Option -->
+          <label class="card popular">
+            <input type="radio" name="unit" value="2" checked />
+            <div class="most-popular">MOST POPULAR</div>
+            <div class="card-content">
+              <div class="left">
+                <div class="unit-title">2 Unit <span class="badge">20% Off</span></div>
+                <div class="selectors" id="selectors">
+                    <div class="selector-row">
+                      <label>#1</label>
+                      <select><option>S</option><option>M</option><option>L</option></select>
+                      <select><option>Black</option><option>White</option></select>
+                    </div>
+                    <div class="selector-row">
+                      <label>#2</label>
+                      <select><option>S</option><option>M</option><option>L</option></select>
+                      <select><option>Colour</option><option>Red</option><option>Blue</option></select>
+                    </div>
+                  </div>
+              </div>
+              <div class="right">
+                <div class="price">$18.00 USD</div>
+                <div class="original-price">$24.00 USD</div>
+              </div>
+            </div>
+          </label>
+    
+          <!-- 3 Unit Option -->
+          <label class="card">
+            <input type="radio" name="unit" value="3" />
+            <div class="card-content">
+              <div class="left">
+                <div class="unit-title">3 Unit <span class="badge">30% Off</span></div>
+              </div>
+              <div class="right">
+                <div class="price">$24.00 USD</div>
+                <div class="original-price">$24.00 USD</div>
+              </div>
+            </div>
+          </label>
+    
+          <!-- Footer Section -->
+          <div class="footer">
+            <div class="free-delivery">Free Delivery</div>
+            <div class="total">Total : <span id="totalPrice">$18.00 USD</span></div>
+          </div>
+          <button type="submit" class="add-to-cart">
+            <span>+</span> Add to Cart
+          </button>
+    
+          <!-- <div class="powered">@ Powered by Pumper</div> -->
+        </form>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>
